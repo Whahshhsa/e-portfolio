@@ -1,0 +1,111 @@
+body {
+    background: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(15, 100px);
+    grid-template-rows: repeat(7, 100px);
+}
+
+.leftbar {
+    grid-area: 1/1/8/4;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+}
+
+.leftbar ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.leftbar ul li{
+    margin-bottom: 20px ;
+}
+
+.leftbar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.logo h1{
+    font-size: 40px;
+    color: white;
+}
+
+.project {
+    grid-area: 1/4/2/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project h1{
+    color: white;
+    font-size: 40px;
+}
+
+.project1 {
+    grid-area: 2/4/5/10;
+    background: blue;
+    margin: 0px 15px 15px; 
+    border-radius: 20px;
+}
+
+.project2 {
+    grid-area: 5/4/8/10;
+    background: blue;
+    margin: 0px 15px 15px;
+    border-radius: 20px;
+}
+
+.picture {
+    grid-area: 2/11/5/14;
+    background: red;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.profile {
+    grid-area: 4/10/8/15;
+    background: blue;
+    border-radius: 20px;
+    margin: 0px 15px 15px;
+}
+
+.skills {
+    grid-area: 1/15/2/16; 
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.icons {
+    grid-area: 2/15/8/16; ;
+    background: blue;
+    border-radius: 20px;
+    margin: 0px 10px 15px;
+}
