@@ -5,11 +5,13 @@
   }
   
 body {
-    background: white;
+    color: #eae0c8;
+    background: #eae0c8;
     font-family: Arial, sans-serif, "Geostar";
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -22,7 +24,7 @@ body {
 
 .leftbar {
     grid-area: 1/1/8/4;
-    background: blue;
+    background: linear-gradient(to bottom, #536878 60%, #eae0c8);
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -41,7 +43,7 @@ body {
 
 .leftbar ul a{
     text-decoration: none;
-    color: white;
+    color: #eae0c8;
 }
 
 .logo{
@@ -57,7 +59,7 @@ body {
 
 .logo h1{
     font-size: 40px;
-    color: black;
+    color: currentColor;
     font-family: "Geostar";
 
 
@@ -71,35 +73,47 @@ body {
 }
 
 .project h1{
-    color: black;
+    color: #536878;
     font-size: 40px;
     font-family: "Geostar";
 }
 
 .project1 {
     grid-area: 2/4/5/10;
-    background: blue;
+    background: #536878;
     margin: 0px 15px 15px; 
     border-radius: 20px;
 }
 
 .project2 {
     grid-area: 5/4/8/10;
-    background: blue;
+    background: #536878;
     margin: 0px 15px;
     border-radius: 20px;
 }
 
 .picture {
     grid-area: 2/11/5/14;
-    background: red;
+    background-color: #eae0c8;
+    background-image: radial-gradient(#535353 10%, transparent 10%),
+                      radial-gradient(#535353 10%, transparent 10%);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: solid 8px #536878;
+}
+
+.picture img {
+    object-fit: cover;
+    object-position: -3px -50px;
+    width: 100%;
+    height: 100%; 
 }
 
 .profile {
     grid-area: 4/10/8/15;
-    background: blue;
+    background: #536878;
     border-radius: 20px;
     margin: 0px 15px;
 }
@@ -107,7 +121,7 @@ body {
 .skills {
     grid-area: 1/15/2/16; 
     font-size: 10px;
-    color: black;
+    color: #536878;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -115,7 +129,7 @@ body {
 }
 .icons {
     grid-area: 2/15/8/16; ;
-    background: blue;
+    background: #536878;
     position: relative;
     border-radius: 20px;
     display: grid;
